@@ -28,7 +28,7 @@ const goalHandler = () => {
 // Call goalHandler every 8 seconds (8000 milliseconds)
 setInterval(() => {
   goalHandler();
-}, 80000); // <<<  apni goal er time akhan theke chaange korben
+}, 40000); // <<<  apni goal er time akhan theke chaange korben
 
 
 
