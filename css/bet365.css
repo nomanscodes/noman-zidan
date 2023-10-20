@@ -1,0 +1,1187 @@
+html {
+  box-sizing: border-box;
+  font-size: 0.385em;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(218, 220, 224);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 15% 50% 35%;
+  grid-template-rows: 7em 9.2em auto;
+  grid-template-areas:
+    "header              header                        header"
+    "header2             header2                      header2"
+    "nav                 upperContent             aside"
+    "nav                 upperContent2           aside2"
+    "nav                 upperContent3           aside2"
+    "nav                 content                       aside2"
+    "nav                 content2                     aside2"
+    "nav                 content3                     aside2"
+    "nav                 content4                     aside2"
+    "nav                 content5                     aside2"
+    "nav                 content6                     aside2"
+    "nav                 content7                     aside2"
+    "nav                 upperContent4           aside3"
+    "nav                 upperContent5           aside3"
+    "nav                 content8                     aside4"
+    "nav                 linea8                          aside4"
+    "nav                 content9                     aside5"
+    "nav                 content9                     aside5"
+    "nav                 content9                     aside6"
+    "nav                 content9                     aside6"
+    "nav                 content9                    aside6"
+    "nav                 content9                  aside7"
+    "nav                 content9                          aside7"
+    "nav                 content9                          aside7"
+    "nav                 content9                          aside8"
+    "nav                 content9                          aside8"
+    "nav                 content9                          aside8"
+    "nav                 footerlinea                footerlinea"
+    "nav                 footer2                        footer2";
+}
+
+body > * {
+  background-color: #58585866;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: #333333;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 9em;
+  z-index: 5000;
+}
+
+.header2 {
+  grid-area: header2;
+  display: flex;
+  position: fixed;
+  background-color: rgb(18, 110, 81);
+  width: 100%;
+  margin-top: 7em;
+  height: 9.2em;
+  z-index: 5000;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #383838;
+}
+
+.upperContent {
+  grid-area: upperContent;
+  background-color: #494949;
+  display: flex;
+}
+
+.upperContent2 {
+  grid-area: upperContent2;
+  background-color: #494949;
+  display: flex;
+}
+
+.upperContent3 {
+  grid-area: upperContent3;
+  background-color: #494949;
+}
+
+.upperContent4 {
+  grid-area: upperContent4;
+  background-color: #494949;
+
+  display: flex;
+}
+
+.upperContent5 {
+  grid-area: upperContent5;
+  background-color: #494949;
+
+  display: flex;
+}
+
+.content {
+  grid-area: content;
+  background-color: #494949;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content2 {
+  grid-area: content2;
+  background-color: #494949;
+}
+
+.content3 {
+  grid-area: content3;
+  background-color: #494949;
+  display: flex;
+  justify-content: space-between;
+  z-index: 4000;
+}
+
+.content4 {
+  grid-area: content4;
+  background-color: #494949;
+}
+
+.content5 {
+  grid-area: content5;
+  background-color: #494949;
+  display: flex;
+  justify-content: space-between;
+  z-index: 4000;
+}
+
+.content6 {
+  grid-area: content6;
+  background-color: #494949;
+}
+
+.content7 {
+  grid-area: content7;
+  background-color: #494949;
+  display: flex;
+  justify-content: space-between;
+  z-index: 4000;
+}
+
+.content8 {
+  grid-area: content8;
+  background-color: #494949;
+  display: flex;
+  justify-content: space-between;
+  z-index: 4000;
+}
+
+.content9 {
+  grid-area: content9;
+  background-color: #494949;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3000;
+}
+
+.linea8 {
+  grid-area: linea8;
+  background-color: #494949;
+}
+
+
+.aside {
+  grid-area: aside;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+}
+
+.aside2 {
+  grid-area: aside2;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  flex-direction: column;
+}
+
+.aside3 {
+  grid-area: aside3;
+  background-color: rgb(88, 88, 88);
+  margin-top: 0;
+}
+
+.aside4 {
+  margin-top: -4em;
+  grid-area: aside4;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  z-index: 4000;
+}
+
+.aside5 {
+  grid-area: aside5;
+  background-color: rgb(88, 88, 88);
+  margin-top: -1em;
+  z-index: 4200;
+}
+
+.aside6 {
+  margin-top: -1em;
+  grid-area: aside6;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  z-index: 4000;
+}
+
+.aside7 {
+  grid-area: aside7;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  z-index: 4000;
+}
+
+.aside8 {
+  grid-area: aside8;
+  margin-top: 0em;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+}
+
+.aside9 {
+  grid-area: aside9;
+  background-color: rgb(88, 88, 88);
+  margin-top: -4em;
+}
+
+.aside10 {
+  grid-area: aside10;
+  margin-top: -4em;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+}
+
+.aside11 {
+  grid-area: aside11;
+  background-color: rgb(88, 88, 88);
+  margin-top: -2.6em;
+}
+
+.aside12 {
+  grid-area: aside12;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  margin-top: -2em;
+}
+
+.prefooter {
+  grid-area: prefooter;
+  background-color: #444444;
+  display: flex;
+}
+.prefooter2 {
+  grid-area: prefooter2;
+  background-color: #444444;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #444444;
+  display: flex;
+}
+
+.footerlinea {
+  grid-area: footerlinea;
+  background-color: #444444;
+  display: flex;
+}
+
+.footer2 {
+  grid-area: footer2;
+  background-color: #444444;
+}
+
+p {
+  font-size: 2em;
+}
+
+.listUpper {
+  display: flex;
+  font-size: 1.85em;
+  list-style: none;
+  width: 23%;
+  padding-left: 1.9em;
+  justify-content: space-between;
+}
+.listUpper2 {
+  display: flex;
+  font-size: 1.85em;
+  list-style: none;
+  width: 71.5%;
+  justify-content: flex-end;
+}
+
+.liUpper {
+  padding-top: 0.4em;
+  display: flex;
+}
+
+a {
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f8f8f8;
+}
+
+.liUpper2 {
+  padding-top: 0.4em;
+}
+
+.liUpper3 {
+  margin-left: 1.3em;
+  padding-top: 0.4em;
+}
+
+.bet365logo {
+  margin-top: 1em;
+  width: 20em;
+  padding-left: 0.44em;
+}
+
+.listheader2 {
+  font-size: 2.2em;
+  display: flex;
+  list-style: none;
+  padding-top: 0.35em;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.liheader2 {
+  margin-left: 3em;
+  padding-top: 0.35em;
+  display: flex;
+  width: 39%;
+  justify-content: flex-end;
+}
+
+.liheader4 {
+  margin-left: 3em;
+  padding-top: 0.35em;
+  display: flex;
+  width: 36.5%;
+  justify-content: flex-start;
+}
+
+.hrdeportes {
+  width: 56px;
+  height: 0.28px;
+  position: absolute;
+  left: 50.2em;
+  margin-top: 2.4em;
+  background-color: #f9dc1c;
+  border-color: #f9dc1c;
+}
+
+.lupaheader2 {
+  width: 0.9em;
+  height: 1.4em;
+}
+
+.liheader3 {
+  margin-left: 2em;
+  padding-top: 0.35em;
+  font-size: 0.91em;
+}
+
+.textheader2 {
+  color: white;
+}
+.textheader2:hover {
+  color: #5ee1b8;
+}
+
+.textheader1:hover {
+  color: white;
+}
+.textdeporte {
+  color: white;
+}
+.textheader {
+  color: white;
+}
+
+.boton {
+  opacity: 0.75;
+}
+
+.iniciar {
+  background-color: #f9dc1c;
+  margin-left: 1.1em;
+  border: none;
+  cursor: pointer;
+}
+
+.betnav {
+  font-size: 1.95em;
+  list-style: none;
+  margin-block-start: 0em;
+  padding-inline-start: 0.65em;
+  padding-inline-end: 8.1em;
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+  width: 8.2%;
+}
+
+.betnavli {
+  height: 2.6em;
+  padding-left: 1em;
+  padding-top: 1.3em;
+}
+
+.betnavli:hover {
+  background-color: #404040;
+}
+
+.listacompleta {
+  font-weight: bold;
+  color: rgb(46, 193, 147);
+  font-size: 0.9em;
+  padding-left: 1em;
+}
+
+.upperdir {
+  display: flex;
+  width: 100%;
+}
+
+.eventos1 {
+  display: flex;
+  font-size: 1em;
+  font-weight: bold;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-top: 0.6em;
+  width: 50%;
+  height: 10%;
+}
+
+.directo2 {
+  display: flex;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+  margin-left: 1.1em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-top: 0.6em;
+  width: 25%;
+}
+.signosdiv {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+}
+.signoeventos2 {
+  display: flex;
+  padding: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  background-color: #494949;
+}
+
+.fondocuota {
+  background-color: #e4e4e4;
+}
+.colorcuota {
+  color: #137a5a;
+}
+
+.signoeventos2:hover {
+  display: flex;
+  padding: 1.5em;
+  border: 0em;
+  background-color: rgb(129, 129, 129);
+  cursor: pointer;
+}
+
+.linea {
+  border-top: 1px solid rgb(52, 218, 165);
+  height: 0.5em;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+.equipos1 {
+  display: block;
+  font-size: 1.43em;
+  margin-left: 2em;
+  width: 40%;
+}
+
+.equipos1 h3 {
+  font-weight: 600;
+}
+
+.minutos {
+  color: #9a9a9a;
+}
+
+.equipos1:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.resultado {
+  font-size: 1.43em;
+}
+
+.signosdiv2 {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  color: #f9dc1c;
+  justify-content: space-around;
+}
+
+.vl {
+  border-left: 1px solid rgb(126, 126, 126);
+  height: 11em;
+  opacity: 0.3;
+}
+
+.linea2 {
+  border-top: 1px solid rgb(126, 126, 126);
+  height: 0.5em;
+  margin-top: 0.9em;
+  width: 100%;
+  display: block;
+  opacity: 0.3;
+}
+
+.linea5 {
+  border-top: 1px solid rgb(126, 126, 126);
+  height: 0.5em;
+  width: 100%;
+  display: block;
+  opacity: 0.3;
+  margin-top: 0.8em;
+}
+
+.equipostenis {
+  display: block;
+  font-size: 1.43em;
+  margin-left: 2em;
+  width: 35%;
+}
+.equipostenis:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.signosdiv2tenis {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  color: #f9dc1c;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.signoeventos3:hover {
+  display: flex;
+  border: 0em;
+  background-color: rgb(129, 129, 129);
+  cursor: pointer;
+}
+
+.euro2020 {
+  display: flex;
+  width: 100%;
+}
+.directo {
+  display: flex;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: rgb(52, 218, 165);
+  margin-left: 1.1em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-top: 1em;
+  width: 50%;
+}
+
+.ircupon {
+  display: flex;
+  margin-left: -1em;
+  justify-content: flex-end;
+  width: 42%;
+  cursor: pointer;
+}
+
+.ircupon:hover {
+  color: #ececec;
+}
+
+.provando {
+  display: none;
+  position: absolute;
+  width: 70em;
+  height: 20em;
+  background-color: coral;
+  z-index: 180000;
+  margin-left: 85em;
+  margin-top: 83em;
+}
+.euro2020-2 {
+  margin-top: 5em;
+}
+
+.equipos2 {
+  display: block;
+  font-size: 1.43em;
+  margin-left: 2em;
+  width: 45%;
+}
+
+.equipos2:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.signosdiv3 {
+  display: flex;
+  width: 45%;
+  height: 10%;
+  justify-content: space-around;
+}
+.signoeventos3 {
+  display: flex;
+  padding: 2em;
+  color: #f9dc1c;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.resultado {
+  font-size: 1.43em;
+}
+
+.vl2 {
+  border-left: 1px solid rgb(126, 126, 126);
+  height: 11em;
+  opacity: 0.8;
+}
+
+.team1 {
+  width: 1.5em;
+}
+
+.team2 {
+  width: 1.3em;
+}
+
+.asidesigno {
+  color: rgb(218, 220, 224);
+}
+
+.linea3 {
+  border-top: 1px solid rgb(126, 126, 126);
+  height: 0.5em;
+  padding: 0;
+  margin-top: 2em;
+  width: 100%;
+  display: block;
+  opacity: 0.3;
+}
+
+.linea4 {
+  border-top: 1px solid rgb(126, 126, 126);
+  height: 0.5em;
+  padding: 0;
+  margin-top: 1em;
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+
+.signoeventos3 {
+  padding: 2em;
+}
+
+.footerdiv {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: -3em;
+  margin-left: -5em;
+}
+.divizquierda {
+  display: flex;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  width: 100%;
+  margin-left: 3em;
+  align-items: center;
+}
+
+.primertercio {
+  display: flex;
+  width: 28%;
+  align-items: center;
+}
+
+.segundotercio {
+  display: flex;
+  width: 28%;
+  align-items: center;
+}
+
+.tercertercio {
+  display: flex;
+  width: 28%;
+  align-items: center;
+}
+
+.divoferta {
+  display: block;
+}
+
+.oferta1 {
+  display: block;
+}
+.divizquierda h4 {
+  font-size: 1.85em;
+  color: #c3c3c3;
+  margin-block-end: 0.7em;
+  margin-block-start: 2em;
+}
+
+.numeroeventos {
+  display: flex;
+  margin-top: 1em;
+  justify-content: flex-end;
+  width: 45%;
+  cursor: pointer;
+}
+.numeroeventos:hover {
+  color: #ececec;
+}
+
+.divioferta h4 {
+  font-size: 3em;
+  color: #c3c3c3;
+}
+
+.divoferta p {
+  font-size: 1.7em;
+  color: #acacac;
+}
+
+.preoferta {
+  font-size: 1.6em;
+  color: rgb(52, 218, 165);
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.divmedio h4 {
+  font-size: 1.85em;
+  color: #c3c3c3;
+  margin-block-end: 0.6em;
+  margin-block-start: 2em;
+}
+.divmedio p {
+  font-size: 1.6em;
+}
+
+.estrella {
+  width: 1.6em;
+}
+
+.linksss {
+  display: flex;
+  justify-content: center;
+  column-gap: 15em;
+  line-height: 6em;
+  margin-left: -25em;
+}
+
+.titulolink {
+  font-size: 2.4em;
+  font-weight: bold;
+  list-style: none;
+  color: #ffffff;
+}
+
+.enlacesfooter {
+  font-size: 2em;
+  color: #c3c3c3;
+  list-style: none;
+}
+
+.betnav::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+.betnav::-webkit-scrollbar-thumb {
+  background-color: #606060;
+  border-radius: 20px;
+  height: 10em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #383838;
+  border: 0.9px solid #343434;
+}
+
+body::-webkit-scrollbar {
+  width: 1.2em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7a7a7a;
+  border-radius: 20px;
+  height: 10em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #383838;
+  border: 0.9px solid black;
+}
+
+.magico {
+  background-color: #f9dc1c;
+  width: 54em;
+  height: 15em;
+  z-index: 5000;
+  top: 64em;
+  font-size: 1.3em;
+  color: #333333;
+  position: fixed;
+  left: 64em;
+  border-radius: 1000px 500px;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.adalt {
+  display: grid;
+  grid-row: 1/4;
+  grid-column: 1/7;
+  background-color: #f0f0f0;
+  border-radius: 5%;
+}
+.adalt2 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 3/5;
+  background-color: #f0f0f0;
+}
+
+.adalt4 {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/7;
+  font-size: 0.62em;
+  margin-top: -4em;
+}
+.adalt3 {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/7;
+  background-color: #f0f0f0;
+  font-size: 0.62em;
+  margin-top: -2em;
+}
+
+#teambet {
+  color: 545454;
+  font-weight: bold;
+  padding-left: 0.8em;
+}
+
+#signobet {
+  color: #137a5a;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#matchbet {
+  padding-left: 1.4em;
+}
+
+#resultadofinal {
+  padding-left: 1.4em;
+}
+
+.abaix {
+  grid-row: 4/8;
+  grid-column: 1/4;
+  background-color: #333333;
+}
+
+#betmoney {
+  background-color: #333333;
+  width: 90%;
+  height: 90%;
+  border: none;
+  color: #137a5a;
+  margin-left: 1em;
+  border-style: none;
+  font-size: 1.7em;
+  margin-top: 0.1em;
+}
+
+#betmoney:focus {
+  font-size: 1.7em;
+}
+
+.abaix ::placeholder {
+  color: #53c29f;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.abaix2 {
+  grid-row: 4/8;
+  grid-column: 4/8;
+  background-color: #333333;
+}
+
+.dobet {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #666666;
+  font-weight: bold;
+  color: #a4a4a4;
+  font-size: 2em;
+}
+.mobile {
+  display: none;
+}
+
+/* start :noman  */
+.score-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #2c3a41;
+}
+
+.club-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.club-info p{
+font-weight: 600;
+font-size: 15px;
+padding: 0;
+margin: 0;
+color: rgb(233, 217, 217);
+} 
+.club-image{
+  width: 50px;
+  margin-bottom: 7px;
+}
+.n-live-scores{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.n-live-scores-time{
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.n-live-scores-time h1{
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.n-live-scores h1{
+padding: 0;
+margin: 0;
+}
+.n-live-icon{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100px;
+  height: 38px;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.football-peatch{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+
+.goal-message {
+  font-size: 60px;
+  color: rgb(255, 242, 242);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1.5s ease-in-out, fadeOut 1.5s ease-in-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-20px);
+      display: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .listUpper {
+    display: none !important;
+  }
+  .listUpper2 {
+    display: none !important;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(18, 110, 81);
+    font-size: 8rem;
+    padding: 6rem;
+  }
+
+  .header2 {
+    display: none !important;
+  }
+  .nav {
+    display: none;
+  }
+  .upperContent {
+    display: none;
+  }
+  .upperContent2 {
+    display: none;
+  }
+  .upperContent3 {
+    display: none;
+  }
+  .upperContent4 {
+    display: none;
+  }
+  .upperContent5 {
+    display: none;
+  }
+
+  .content {
+    display: none;
+  }
+  .content2 {
+    display: none;
+  }
+  .content3 {
+    display: none;
+  }
+  .content4 {
+    display: none;
+  }
+  .content5 {
+    display: none;
+  }
+  .content6 {
+    display: none;
+  }
+  .content7 {
+    display: none;
+  }
+  .content8 {
+    display: none;
+  }
+  .content9 {
+    display: none;
+  }
+  .linea8 {
+    display: none;
+  }
+  .aside {
+    display: none;
+  }
+  .aside2 {
+    display: none;
+  }
+  .aside3 {
+    display: none;
+  }
+  .aside4 {
+    display: none;
+  }
+  .aside5 {
+    display: none;
+  }
+  .aside6 {
+    display: none;
+  }
+  .aside7 {
+    display: none;
+  }
+  .aside8 {
+    display: none;
+  }
+  .aside9 {
+    display: none;
+  }
+  .aside10 {
+    display: none;
+  }
+  .aside11 {
+    display: none;
+  }
+  .aside12 {
+    display: none;
+  }
+  .prefooter {
+    display: none;
+  }
+  .prefooter2 {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .footer2 {
+    display: none;
+  }
+  .footerlinea {
+    display: none;
+  }
+}
